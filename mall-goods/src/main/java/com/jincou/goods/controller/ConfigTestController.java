@@ -21,6 +21,12 @@ public class ConfigTestController {
     @Value("${user.name}")
     private String name;
 
+    /**
+     * @description: http://localhost:6001/api/v1/config/test-config
+     * @author: lipan
+     * @date 2022/7/29 18:08
+     * @return java.lang.Object
+     */
     @RequestMapping("test-config")
     public Object findByGoodsId() {
         System.out.println("name = " + name);
